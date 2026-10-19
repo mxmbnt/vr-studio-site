@@ -1,0 +1,116 @@
+/*
+  Design system : src/styles/webflow.css est la feuille d'origine du template Cleanhas
+  (variables dans :root, polices Raleway / Poppins, breakpoints 991 / 767 / 479px).
+  Tailwind est chargé sans preflight pour ne pas écraser ces styles : les classes utilitaires
+  restent disponibles pour les ajouts.
+*/
+@import './styles/webflow.css';
+@import 'tailwindcss/theme' layer(theme);
+@import 'tailwindcss/utilities' layer(utilities);
+
+@theme {
+  --font-heading: 'Raleway', sans-serif;
+  --font-sans: 'Poppins', sans-serif;
+
+  /* Charte graphique VR STUDIO 2025 */
+  --color-orange: #ff6000; /* couleur principale */
+  --color-orange-light: #ff8339; /* couleur principale (variante) */
+  --color-anthracite: #252525; /* texte des paragraphes, fonds foncés */
+  --color-white: #ffffff;
+  --color-amber: #ff9e00; /* secondaire, à utiliser ponctuellement */
+  --color-red: #ef002a; /* secondaire, à utiliser ponctuellement */
+  --color-label: #ffe3d1;
+  --color-light: #f2f2f2;
+
+  --radius-sm: 20px;
+  --radius-md: 30px;
+  --radius-lg: 40px;
+}
+
+/* Background videos: fallback image only for reduced motion (from the Webflow <head>) */
+[data-wf-bgvideo-fallback-img] {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-wf-bgvideo-fallback-img] {
+    position: absolute;
+    z-index: -100;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Section « Pourquoi VR STUDIO » (accueil) : rangées moins hautes que le template sur desktop
+   (375px et 354px au lieu de 488px et 459px). Les éléments sont réduits en gardant leurs proportions
+   pour conserver le design d'origine (arches inclinées, vignettes en escalier). */
+@media screen and (min-width: 992px) {
+  /* carte « Des pros qui racontent leur métier » */
+  .choose-right-info-card {
+    padding: 14px;
+  }
+  .member-wrap {
+    padding: 28px 16px 16px;
+    grid-column-gap: 18px;
+  }
+  /* carte bleue plus large (la colonne de texte à gauche se resserre) : les noms tiennent sur une ligne */
+  .choose-left-info-wrap {
+    max-width: 300px;
+  }
+  .choose-right-info-card {
+    max-width: none;
+  }
+  .member-info-title {
+    white-space: nowrap;
+  }
+  /* les deux portraits ont la même taille */
+  .member-card .member-image-wrap {
+    width: 150px;
+  }
+  .member-image-wrap,
+  .member-image {
+    height: auto;
+  }
+  /* carte « On vient à vous » : vignettes plus petites, toujours décalées en escalier */
+  .choose-bottom-left-info-wrap {
+    grid-row-gap: 24px;
+    padding: 35px 40px;
+  }
+  .choose-image-card {
+    min-height: 166px;
+  }
+  .choose-image-box {
+    width: 127px;
+  }
+  /* carte « Notre engagement » : texte puis bande animée en dessous, l'ensemble centré en hauteur.
+     L'animation garde sa taille, seul l'espace vide autour des pastilles est rogné. */
+  .choose-lottie-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 28px;
+  }
+  .choose-typography-box {
+    order: 1;
+    padding-bottom: 0;
+  }
+  .choose-lottie-box {
+    order: 2;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: 90px;
+    max-height: none;
+    overflow: hidden;
+  }
+  .choose-lottie-box > svg {
+    height: 353px !important;
+    margin-top: -70px;
+  }
+}
+
+/* « Ils nous ont fait confiance » : majuscule en début de phrase seulement */
+.marquee-title {
+  text-transform: none;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VR STUDIO | Les métiers au plus près de la réalité</title>
+    <meta name="description" content="VR STUDIO crée des contenus immersifs en 360° pour faire découvrir les métiers en casque de réalité virtuelle : écoles, structures de l’emploi et entreprises." />
+    <meta property="og:title" content="VR STUDIO | Les métiers au plus près de la réalité" />
+    <meta property="og:description" content="Captation 360° de métiers et ateliers découverte en casque de réalité virtuelle." />
+    <meta property="og:image" content="/media/li-atelier-college-1.jpg" />
+    <link rel="icon" type="image/jpeg" href="/media/vr-studio-logo.jpg" />
+    <link rel="apple-touch-icon" href="/media/vr-studio-logo.jpg" />
+    <!-- Typographie du template : Raleway (titres) + Poppins (texte) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Same as the Webflow export: flags JS / touch so the interactions' initial states apply before render -->
+    <script>
+      !(function (o, c) {
+        var n = c.documentElement, t = ' w-mod-'
+        n.className += t + 'js'
+        ;('ontouchstart' in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + 'touch')
+      })(window, document)
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

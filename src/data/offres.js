@@ -1,0 +1,111 @@
+// Contenu des pages offre (/offres/<slug>), affiché par src/sections/ServiceDetail/ServiceDetails.jsx
+export const offres = {
+  'captation-360-metiers': {
+    title: 'Filmer votre métier tel qu’il se vit',
+    intro: [
+      'Nous venons sur votre lieu de travail avec une caméra 360° et filmons vos professionnels en situation réelle : leurs gestes, leurs outils, leurs échanges, leur environnement.',
+      'Le résultat : une vidéo immersive qui place le spectateur au cœur de votre activité, à regarder en casque de réalité virtuelle ou en ligne.',
+    ],
+    images: ['/media/fit/px-cam360-6739413-480x500.jpg', '/media/fit/px-crew-32439172-480x500.jpg'],
+    steps: [
+      { title: '1. Préparation', text: 'Un échange pour choisir le métier à filmer, les moments clés de la journée et les personnes qui prendront la parole.' },
+      { title: '2. Tournage sur site', text: 'Une captation discrète, adaptée à votre rythme et à vos contraintes de sécurité, sans interrompre l’activité.' },
+    ],
+    overview: 'La vidéo 360° montre tout l’espace de travail, sans cadrage imposé : chacun regarde ce qui l’intéresse et se fait sa propre idée du métier.',
+    figure: '/media/li-video-kinesitherapeute.jpg',
+    overview2: 'Nous assurons le montage, l’habillage aux couleurs de votre structure et la livraison dans les formats adaptés aux casques et au web.',
+    included: 'Chaque captation comprend la préparation, le tournage, le montage 360° et la livraison des fichiers.',
+    highlight: 'Une vidéo que vous pouvez réutiliser partout : forums, recrutement, réseaux sociaux, ateliers en classe.',
+    list: ['Repérage et préparation du tournage', 'Captation 360° en situation réelle', 'Montage, habillage et livraison des fichiers'],
+  },
+  'ateliers-decouverte-metiers': {
+    title: 'Des ateliers en casque VR pour les élèves',
+    intro: [
+      'Nous animons des ateliers découverte métiers dans les collèges et lycées. Les élèves enfilent un casque et se retrouvent au cœur d’un environnement de travail réel.',
+      'Ces séances s’inscrivent naturellement dans le Parcours Avenir et complètent le travail d’orientation mené par les équipes éducatives.',
+    ],
+    images: ['/media/fit/li-atelier-college-2-480x500.jpg', '/media/fit/li-atelier-college-5-480x500.jpg'],
+    steps: [
+      { title: '1. Immersion', text: 'Chaque élève découvre plusieurs métiers en 360° : on observe les gestes, l’ambiance, les conditions de travail.' },
+      { title: '2. Échange', text: 'Un temps de discussion collectif pour mettre des mots sur ce qui a plu, surpris ou donné envie d’en savoir plus.' },
+    ],
+    overview: 'Les élèves passent d’une idée abstraite d’un métier à une expérience concrète, ce qui facilite les choix d’orientation et de stage.',
+    figure: '/media/li-atelier-college-1.jpg',
+    overview2: 'Nous venons avec les casques et les contenus. Il suffit d’une salle et d’un créneau dans l’emploi du temps.',
+    included: 'L’atelier est clé en main : matériel, contenus et animation sont fournis par VR STUDIO.',
+    highlight: 'Une séance qui s’adapte au niveau de la classe et aux objectifs de l’établissement.',
+    list: ['Casques de réalité virtuelle fournis', 'Sélection de métiers adaptée à la classe', 'Animation et temps d’échange inclus'],
+  },
+  'insertion-et-emploi': {
+    title: 'Ouvrir de nouvelles pistes professionnelles',
+    intro: [
+      'Avec France Travail, les Missions Locales et les structures d’insertion, nous organisons des sessions immersives pour faire découvrir des métiers souvent méconnus.',
+      'Voir un métier de l’intérieur aide à lever les idées reçues et à se projeter, en particulier dans les secteurs qui recrutent.',
+    ],
+    images: ['/media/fit/li-atelier-insertion-480x500.jpg', '/media/fit/px-youth-8117426-480x500.jpg'],
+    steps: [
+      { title: '1. Thématique', text: 'Nous construisons la session autour d’un secteur : soin, accompagnement, animation, industrie, services à la personne...' },
+      { title: '2. Découverte', text: 'Les participants vivent plusieurs immersions puis échangent avec le conseiller pour préparer la suite de leur parcours.' },
+    ],
+    overview: 'Une session immersive donne envie d’aller plus loin : enquête métier, stage d’observation, formation ou candidature.',
+    figure: '/media/li-video-metiers-soin.jpg',
+    overview2: 'Nous intervenons en agence, en centre social ou lors de semaines thématiques consacrées à un secteur d’activité.',
+    included: 'Le matériel, les contenus et l’animation sont fournis, en lien avec les objectifs de votre structure.',
+    highlight: 'Un format idéal pour les semaines des métiers et les actions collectives.',
+    list: ['Sessions en agence ou en centre social', 'Immersions par secteur d’activité', 'Temps d’échange avec les conseillers'],
+  },
+  'marque-employeur-recrutement': {
+    title: 'Montrer vos métiers pour mieux recruter',
+    intro: [
+      'Les candidats veulent savoir à quoi ressemble vraiment le poste avant de postuler. Une vidéo 360° leur montre votre quotidien, vos équipes et vos locaux.',
+      'C’est un atout pour les métiers en tension : les candidats arrivent mieux informés et plus motivés.',
+    ],
+    images: ['/media/fit/px-mechanic-8478259-480x500.jpg', '/media/fit/px-factory-31212954-480x500.jpg'],
+    steps: [
+      { title: '1. Vos métiers à valoriser', text: 'Nous identifions avec vous les postes qui peinent à recruter et ce que les candidats doivent absolument voir.' },
+      { title: '2. Une vidéo à diffuser', text: 'La vidéo s’utilise sur votre site, vos offres d’emploi, vos réseaux sociaux et vos salons de recrutement.' },
+    ],
+    overview: 'Montrer le métier tel qu’il est réduit les mauvaises surprises et les départs rapides après l’embauche.',
+    figure: '/media/li-video-teleassistance-serenite.jpg',
+    overview2: 'Téléassistance Sérénité a par exemple choisi la vidéo 360° pour présenter ses métiers de manière concrète.',
+    included: 'Captation, montage et accompagnement sur la diffusion de la vidéo auprès de vos futurs candidats.',
+    highlight: 'Une image employeur authentique, portée par vos propres équipes.',
+    list: ['Vidéo 360° de vos postes clés', 'Formats pour le web, les réseaux et les casques', 'Conseils de diffusion pour vos recrutements'],
+  },
+  'salons-forums-evenements': {
+    title: 'Un stand VR qui attire le public',
+    intro: [
+      'Sur un forum emploi ou un salon de l’orientation, un stand avec casques de réalité virtuelle attire naturellement les visiteurs.',
+      'Nous installons et animons le stand, avec vos vidéos 360° ou une sélection de métiers adaptée à l’événement.',
+    ],
+    images: ['/media/fit/li-stand-vr-studio-480x500.jpg', '/media/fit/px-fair-35138560-480x500.jpg'],
+    steps: [
+      { title: '1. Installation', text: 'Nous arrivons avec le matériel, les casques et la signalétique, et installons le stand avant l’ouverture.' },
+      { title: '2. Animation', text: 'Nous guidons les visiteurs pendant l’immersion et facilitons ensuite l’échange avec vos équipes.' },
+    ],
+    overview: 'Le casque crée une file d’attente et des conversations : c’est un excellent point de départ pour parler de vos métiers.',
+    figure: '/media/li-asse-tournage-pelouse.jpg',
+    overview2: 'Le format convient aux forums emploi, journées portes ouvertes, salons professionnels et événements sportifs.',
+    included: 'Installation, matériel, contenus et animation pendant toute la durée de l’événement.',
+    highlight: 'Un stand clé en main qui met vos métiers en avant.',
+    list: ['Casques et matériel fournis', 'Animation pendant l’événement', 'Contenus adaptés au public'],
+  },
+  'visites-virtuelles-patrimoine': {
+    title: 'Faire visiter vos lieux à 360°',
+    intro: [
+      'Au-delà des métiers, nous réalisons des visites virtuelles de sites, d’établissements et de lieux patrimoniaux.',
+      'Le public explore les lieux librement, à distance sur le web ou en immersion avec un casque.',
+    ],
+    images: ['/media/fit/px-heritage-40239558-480x500.jpg', '/media/fit/px-museum-36088717-480x500.jpg'],
+    steps: [
+      { title: '1. Parcours', text: 'Nous définissons ensemble les espaces à montrer et le fil de la visite.' },
+      { title: '2. Captation', text: 'Nous filmons ou photographions les lieux en 360° pour offrir une vue complète de chaque espace.' },
+    ],
+    overview: 'Une visite virtuelle permet de découvrir un lieu avant de s’y rendre, ou d’y accéder quand le déplacement est impossible.',
+    figure: '/media/px-heritage-34610169.jpg',
+    overview2: 'Elle sert aussi bien à la promotion touristique qu’à la présentation d’un établissement de formation ou d’une entreprise.',
+    included: 'Préparation du parcours, captation 360° et livraison pour le web ou les casques.',
+    highlight: 'Une manière moderne de valoriser votre patrimoine et vos locaux.',
+    list: ['Captation 360° des espaces', 'Visite consultable en ligne', 'Version pour casques de réalité virtuelle'],
+  },
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+.vite
+*.local
+
+# Captures et sources d'origine du template (lourdes, sous licence) : gardées en local
+_capture/*
+!_capture/tools/

@@ -1,0 +1,74 @@
+import Navbar from '../../sections/shared/Navbar.jsx'
+import RelatedProjects from '../../sections/ProjectDetail/RelatedProjects.jsx'
+import { realisations } from '../../data/realisations.js'
+import { titles } from '../../data/titles.js'
+import Cta from '../../sections/shared/Cta.jsx'
+import Footer from '../../sections/shared/Footer.jsx'
+
+// Initial states of the page interactions (from the Webflow <head>)
+const css = "html.w-mod-js:not(.w-mod-ix3) :is(:is([link-box], [link-box]) [link], :is([nav], [nav]) [nav-link], :is([button], [button]) [button-text], :is([button], [button]) .button-arrow-icon.one, :is([button], [button]) .button-arrow-icon.two) {visibility: hidden !important;}"
+function ProjectDetails() {
+  return (
+    <section className="section project-details">
+      <div className="container hero">
+        <div className="project-details-layout">
+          <div className="project-details-hero-wrap">
+            <div data-w-id="3b6469b3-f63a-489f-61c5-44dd9ddaa4fc" style={{ opacity: "0" }} className="project-page-typography-wrap">
+              <div className="project-page-label-title-wrap">
+                <div data-wf--link-label--variant="base" className="blog-link-box">
+                  <a href="/" className="label-link">Accueil</a>
+                  <div className="label-link version-two">/</div>
+                  <a href="/realisations" className="label-link version-two">Réalisations</a>
+                  <div className="label-link active">/</div>
+                  <a href="/realisations/les-vesperales-aide-a-domicile" className="label-link active">{titles['les-vesperales-aide-a-domicile']}</a>
+                </div>
+                <h1 className="inner-page-title">Les Vespérales : aide à domicile</h1>
+              </div>
+              <div className="project-page-short-text-wrap">
+                <p className="project-page-short-text">Captation des métiers de l’aide à domicile, à présenter en casque VR.</p>
+              </div>
+            </div>
+            <div data-w-id="a337f02b-3208-77ea-57c6-7eb4505a95df" style={{ opacity: "0" }} className="project-label-box-wrap">
+              <div className="label-box">
+                <div className="label-title">Date</div>
+                <div className="label-info">{realisations['les-vesperales-aide-a-domicile'].facts.date}</div>
+              </div>
+              <div className="label-box">
+                <div className="label-title">Format</div>
+                <div className="label-info">{realisations['les-vesperales-aide-a-domicile'].facts.format}</div>
+              </div>
+              <div className="label-box">
+                <div className="label-title">Lieu</div>
+                <div className="label-info">{realisations['les-vesperales-aide-a-domicile'].facts.lieu}</div>
+              </div>
+              <div className="label-box">
+                <div className="label-title">Client</div>
+                <div className="label-info">{realisations['les-vesperales-aide-a-domicile'].facts.client}</div>
+              </div>
+              <div className="label-box">
+                <div className="label-title">Secteur</div>
+                <div className="label-info">{realisations['les-vesperales-aide-a-domicile'].facts.secteur}</div>
+              </div>
+            </div>
+          </div>
+          <div data-w-id="b49f67ec-45ce-c85b-6834-b89abde74a9b" style={{ opacity: "0" }} className="project-banner-wrap">
+            <img src={realisations['les-vesperales-aide-a-domicile'].hero} loading="lazy" width="1880" height="682" alt={realisations['les-vesperales-aide-a-domicile'].alt} className="project-banner-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default function LesVesperalesAideADomicile() {
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: css }} />
+      <Navbar />
+      <ProjectDetails />
+      <RelatedProjects content={realisations['les-vesperales-aide-a-domicile']} />
+      <Cta />
+      <Footer />
+    </>
+  )
+}
